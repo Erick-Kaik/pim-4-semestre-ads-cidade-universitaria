@@ -1,0 +1,70 @@
+﻿@model HotelariaControle.Data.Models.Hospedes
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospede</title>
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+    <!-- Hospede -->
+    <div class="pagina-hospede">
+        <div class="container">
+            <form asp-action="Hospede">
+                <div asp-validation-summary="ModelOnly"></div>
+                <label asp-for="Nome" for="nome">
+                    <input asp-for="Nome" type="text" name="nome" id="nome" required placeholder="Nome Completo" />
+                    <span asp-validation-for="Nome" class="text-danger"></span>
+                </label>
+
+                <label asp-for="Email" for="email">
+                    <input asp-for="Email" type="text" name="email" id="email" required placeholder="Digite seu Email" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </label>
+                <div class="cpf-nascimento">
+                    <label asp-for="Cpf" for="cpf">
+                        <input asp-for="Cpf" type="text" name="cpf" id="cpf" required placeholder="Digite seu CPF" pattern="[0-9]{11}" />
+                        <span asp-validation-for="Cpf" class="text-danger"></span>
+                    </label>
+
+                    <label asp-for="DataDeNascimento" for="nascimento">
+                        <input asp-for="DataDeNascimento" type="date" name="nascimento" id="nascimento" />
+                        <span asp-validation-for="DataDeNascimento" class="text-danger"></span>
+                    </label>
+                </div>
+                <label asp-for="Telefone" for="telefone">
+                    <input asp-for="Telefone" type="tel" name="telefone" id="telefone" required placeholder="Digite seu telefone" pattern="\(?(\d{2})\)?[-\.\s]?(\d{4})[-\.\s]?(\d{4})" size="11" />
+                    <span asp-validation-for="Telefone" class="text-danger"></span>
+                </label>
+
+                <label asp-for="TelefoneAlt" for="telefone-alt">
+                    <input asp-for="TelefoneAlt" type="tel" name="telefone-alt" id="telefone-alt" placeholder="Digite seu segundo Telefone" size="11" />
+                    <span asp-validation-for="TelefoneAlt" class="text-danger"></span>
+                </label>
+
+                <div class="botoes-login">
+                    <input type="submit" value="Cadastrar Hospede" />
+                </div>
+
+                <div class="hr">
+                    <hr />
+                </div>
+
+                <div class="botoes-cadastro">
+                    Ja possui uma conta? Se sim faça o<a asp-area="" asp-controller="Usuario" asp-action="Login">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+@section Scripts{ 
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+</body>
+</html>

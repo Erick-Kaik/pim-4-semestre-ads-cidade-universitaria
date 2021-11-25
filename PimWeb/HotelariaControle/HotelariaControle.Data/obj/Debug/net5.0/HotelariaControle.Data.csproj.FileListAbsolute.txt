@@ -1,0 +1,12 @@
+C:\Users\kevin\Desktop\OutroVideoTeste\HotelariaControle\HotelariaControle.Data\bin\Debug\net5.0\HotelariaControle.Data.deps.json
+C:\Users\kevin\Desktop\OutroVideoTeste\HotelariaControle\HotelariaControle.Data\bin\Debug\net5.0\HotelariaControle.Data.dll
+C:\Users\kevin\Desktop\OutroVideoTeste\HotelariaControle\HotelariaControle.Data\bin\Debug\net5.0\ref\HotelariaControle.Data.dll
+C:\Users\kevin\Desktop\OutroVideoTeste\HotelariaControle\HotelariaControle.Data\bin\Debug\net5.0\HotelariaControle.Data.pdb
+C:\Users\kevin\Desktop\OutroVideoTeste\HotelariaControle\HotelariaControle.Data\obj\Debug\net5.0\HotelariaControle.Data.csproj.AssemblyReference.cache
+C:\Users\kevin\Desktop\OutroVideoTeste\HotelariaControle\HotelariaControle.Data\obj\Debug\net5.0\HotelariaControle.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kevin\Desktop\OutroVideoTeste\HotelariaControle\HotelariaControle.Data\obj\Debug\net5.0\HotelariaControle.Data.AssemblyInfoInputs.cache
+C:\Users\kevin\Desktop\OutroVideoTeste\HotelariaControle\HotelariaControle.Data\obj\Debug\net5.0\HotelariaControle.Data.AssemblyInfo.cs
+C:\Users\kevin\Desktop\OutroVideoTeste\HotelariaControle\HotelariaControle.Data\obj\Debug\net5.0\HotelariaControle.Data.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Desktop\OutroVideoTeste\HotelariaControle\HotelariaControle.Data\obj\Debug\net5.0\HotelariaControle.Data.dll
+C:\Users\kevin\Desktop\OutroVideoTeste\HotelariaControle\HotelariaControle.Data\obj\Debug\net5.0\ref\HotelariaControle.Data.dll
+C:\Users\kevin\Desktop\OutroVideoTeste\HotelariaControle\HotelariaControle.Data\obj\Debug\net5.0\HotelariaControle.Data.pdb

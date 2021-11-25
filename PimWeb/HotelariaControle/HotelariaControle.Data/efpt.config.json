@@ -1,0 +1,65 @@
+﻿{
+   "CodeGenerationMode": 0,
+   "ContextClassName": "BD_HotelContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": true,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "ProjectRootNamespace": "HotelariaControle.Data",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[Consumo]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Fornecedores]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Funcionarios]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Hospedes]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Produtos]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Quartos]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Reservas]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Usuarios]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "DESKTOP-112OH85\\SQLEXPRESS.BD_Hotel",
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": false,
+   "UseHandleBars": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseNoConstructor": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false
+}

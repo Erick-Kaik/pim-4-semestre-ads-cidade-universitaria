@@ -1,0 +1,1670 @@
+/* IMPORTANDO FONTS PARA SEU PROJETO, APARTIR DO GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* GLOBAL */
+html, body {
+    height: 100vh;
+
+    font-family: var(--font-titillium-web);
+
+    background-color: var(--background-white);
+
+}
+
+:root {
+    --font-titillium-web: 'Titillium Web', sans-serif;
+    --font-amaranth: 'Amaranth', sans-serif;
+
+    --text-color-white: #f1f1f1;
+    --text-color-yellow: #f67c0f;
+    --text-color-green: #011A7A;
+    --text-color-gray: #757575;
+
+    --background-color-yellow: #f67c0f;
+    --background-color-white: #FFFFFF;
+    --background-white: #f1f1f1;
+    --background-color-green: #011A3C;
+    --background-color-green-escuro: #01162D;
+    --background-footer-copy: #191919;
+    --background-color-gray: #DCDCDC;
+
+    --border-color-yellow: #f67c0f;
+
+    --font-size-header: 18px;
+    --font-size-select: 13px;
+    --font-size-select-menu: 16px;
+    --font-size-botao: 13px;
+    --font-size-h1: 45px;
+    --font-size-h2: 25px;
+    --font-size-footer: 14px;
+
+    --box-shadow: #26262690;
+
+}
+
+/* HEADER */
+header {
+    background-image: url(../img/background.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 88vh !important;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    position: relative;
+
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60%;
+    height: auto;
+
+}
+
+header nav ul {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    flex-wrap: wrap;
+
+    padding: 2%;
+
+    width: 96%;
+    height: auto;
+
+}
+
+header nav ul li {
+    font-family: var(--font-amaranth);
+
+    padding: 2% 0% 0% 0%;
+
+    color: var(--text-color-white);
+
+    font-size: var(--font-size-header);
+
+    width: 25%;
+    height: auto;
+
+}
+
+header nav ul li a {
+    text-decoration: none;
+
+    color: var(--text-color-white);
+
+    transition: color, .3s ease-in-out;
+
+}
+
+header nav ul li a:hover {
+    color: var(--text-color-yellow);
+
+}
+
+header nav ul li .login {
+    border: 2px solid var(--border-color-yellow);
+    border-radius: 50px;
+
+    background-color: var(--background-color-yellow);
+
+    color: var(--text-color-white);
+
+    padding: 2% 6%;
+
+    transition: color, background-color, border, .3s ease-in-out;
+
+}
+
+header nav ul li .login:hover {
+    border: 2px solid var(--border-color-yellow);
+
+    background-color: transparent;
+
+    color: var(--text-color-white);
+
+}
+
+header .consulta{
+
+    width:auto;
+    height:auto;
+}
+
+header .consulta form{
+    position: absolute;
+
+    left: 16%;
+    bottom: -7%;
+
+    width: 68%;
+    height: 13vh;
+
+    box-shadow: 0px 3px 20px -10px var(--box-shadow);
+
+    background-color: var(--background-color-white);
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+/* MENU HOTEL */
+header .consulta .hotel {
+    width: 24%;
+    height: auto;
+
+}
+
+header .consulta .hotel .titulo {
+    width: 100%;
+    height: auto;
+
+}
+
+header .consulta .hotel .titulo p {
+    color: var(--text-color-green);
+
+    font-size: var(--font-size-select-menu);
+    font-weight: 600;
+
+}
+
+header .consulta .hotel .select {
+    padding: 4.5%;
+
+    width: 91%;
+    height: auto;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: var(--background-white);
+
+    border-radius: 3px;
+
+}
+
+header .consulta .hotel .select .icone {
+    width: 5.5%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header .consulta .hotel .select .icone svg {
+    width: 100%;
+    height: auto;
+
+    color: var(--text-color-green);
+
+}
+
+header .consulta .hotel .select select {
+    width: 70%;
+    height: auto;
+
+    color: var(--text-color-green);
+
+    border: none;
+
+    background-color: transparent;
+
+    font-size: var(--font-size-select);
+    font-weight: 100;
+
+    outline: none;
+
+}
+
+/* MENU DATA */
+header .consulta .data {
+    width: 24%;
+    height: auto;
+
+}
+
+header .consulta .data .titulo {
+    width: 100%;
+    height: auto;
+
+}
+
+header .consulta .data .titulo p {
+    color: var(--text-color-green);
+
+    font-size: var(--font-size-select-menu);
+    font-weight: 600;
+
+}
+
+header .consulta .data .input {
+    width: 100%;
+    height: auto;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .consulta .data .input label {
+    padding: 3.15%;
+
+    width: 91%;
+    height: auto;
+
+    background-color: var(--background-white);
+
+    border-radius: 3px;
+
+}
+
+header .consulta .data .input label input {
+    width: 100%;
+    height: auto;
+
+    color: var(--text-color-green);
+
+    border: none;
+
+    background-color: transparent;
+
+    text-align:center;
+
+    font-size: var(--font-size-select);
+    font-weight: 100;
+
+    outline: none;
+
+}
+
+/* MENU ADULTOS */
+header .consulta .adultos {
+    width: 14%;
+    height: auto;
+
+}
+
+header .consulta .adultos .titulo {
+    width: 100%;
+    height: auto;
+
+}
+
+header .consulta .adultos .titulo p {
+    color: var(--text-color-green);
+
+    font-size: var(--font-size-select-menu);
+    font-weight: 600;
+
+}
+
+header .consulta .adultos .select {
+    padding: 7%;
+
+    width: 86%;
+    height: auto;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: var(--background-white);
+
+    border-radius: 3px;
+
+}
+
+header .consulta .adultos .select .icone {
+    width: 10%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header .consulta .adultos .select .icone svg {
+    width: 100%;
+    height: auto;
+
+    color: var(--text-color-green);
+
+}
+
+header .consulta .adultos .select select {
+    width: 70%;
+    height: auto;
+
+    color: var(--text-color-green);
+
+    border: none;
+
+    background-color: transparent;
+
+    font-size: var(--font-size-select);
+    font-weight: 100;
+
+    outline: none;
+
+}
+
+/* MENU CRIANCA */
+header .consulta .criancas {
+    width: 14%;
+    height: auto;
+
+}
+
+header .consulta .criancas .titulo {
+    width: 100%;
+    height: auto;
+
+}
+
+header .consulta .criancas .titulo p {
+    color: var(--text-color-green);
+
+    font-size: var(--font-size-select-menu);
+    font-weight: 600;
+
+}
+
+header .consulta .criancas .select {
+    padding: 7%;
+
+    width: 86%;
+    height: auto;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: var(--background-white);
+
+    border-radius: 3px;
+
+}
+
+header .consulta .criancas .select .icone {
+    width: 10%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header .consulta .criancas .select .icone svg {
+    width: 100%;
+    height: auto;
+
+    color: var(--text-color-green);
+
+}
+
+header .consulta .criancas .select select {
+    width: 70%;
+    height: auto;
+
+    color: var(--text-color-green);
+
+    border: none;
+
+    background-color: transparent;
+
+    font-size: var(--font-size-select);
+    font-weight: 100;
+
+    outline: none;
+
+}
+
+/* MENU CRIANCA */
+header .consulta .botao {
+    width: 14%;
+    height: auto;
+
+}
+
+header .consulta .botao input {
+    padding: 7%;
+    margin-top: 16%;
+
+    width: 89%;
+    height: auto;
+
+    color: var(--text-color-white);
+
+    font-size: var(--font-size-botao);
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    border: none;
+    border-radius: 3px;
+    outline: none;
+
+    background-color: var(--background-color-green);
+
+    transition: background-color, border, color, .3s ease-in-out;
+
+}
+
+header .consulta .botao input:hover{
+
+    background-color: transparent;
+
+    border: 2px solid var(--background-color-green);
+
+    color: var(--text-color-green);
+
+    cursor:pointer;
+
+    cursor:pointer;
+}
+
+/* SECTION */
+section {
+    margin-top: 8%;
+    margin-bottom: 4%;
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+section h1 {
+    font-size: var(--font-size-h1);
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    font-family: var(--font-amaranth);
+
+    color: var(--text-color-green);
+
+    margin-bottom: 2%;
+
+}
+
+section .imgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: auto;
+    
+}
+
+section .imgs .img {
+    margin: 0.5%;
+
+    width: 24%;
+    height: 40vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+
+    border-radius: 3px;
+
+    transition: filter, border-radius, .3s ease-in-out;
+
+}
+
+section .imgs .img:hover {
+    filter: grayscale(80%);
+
+    border-radius: 3px;
+
+    transition: filter, border-radius, .5s ease-in-out;
+
+
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: var(--background-color-green-escuro);
+
+}
+
+footer .footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: auto;
+
+}
+
+footer .footer .logo {
+    width: 20%;
+    height: auto;
+
+}
+
+footer .footer .logo img {
+    width: 100%;
+    height: auto;
+}
+
+footer .footer .menu {
+    width: 3%;
+    height: auto;
+
+    margin-top: 5%;
+
+}
+
+footer .footer .menu h2 {
+    font-family: var(--font-amaranth);
+    font-weight: 600;
+
+    color: var(--text-color-white);
+}
+
+footer .footer .menu nav {
+    width: 100%;
+    height: auto;
+
+}
+
+footer .footer .menu nav ul {
+    width: 100%;
+    height: auto;
+
+    list-style: none;
+    
+}
+
+footer .footer .menu nav ul li {
+    width: 100%;
+    height: auto;
+    
+}
+
+footer .footer .menu nav ul li a {
+    text-decoration: none;
+
+    color: var(--text-color-white);
+
+    font-size: var(--font-size-select-menu);
+    font-weight: 300;
+    
+}
+
+
+footer .footer .projeto {
+    width: 20%;
+    height: auto;
+
+    margin-top: 5%;
+    
+}
+
+footer .footer .projeto h2 {
+    font-family: var(--font-amaranth);
+    font-weight: 600;
+
+    color: var(--text-color-white);
+}
+
+footer .footer .projeto p {
+    color: var(--text-color-white);
+
+    font-size: var(--font-size-select-menu);
+    font-weight: 300;
+    
+}
+
+footer .copy {
+    padding: 1%;
+
+    width: 98%;
+    height: auto;
+
+    background-color: var(--background-footer-copy);
+
+    font-size: var(--font-size-footer);
+    font-weight: 500;
+
+    color: var(--background-white);
+
+    text-align: center;
+
+}
+
+/* LOGIN */
+.pagina-login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.pagina-login .container {
+
+    width: auto;
+    height: auto;
+
+}
+
+.pagina-login .container form {
+    padding: 10%;
+
+    width: 400px;
+    height: 350px;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow: 0px 3px 5px -5px var(--box-shadow);
+
+    background-color: var(--background-color-white);
+
+    border-radius: 5px;
+}
+
+.pagina-login label {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: var(--font-size-select-menu);
+    font-family: var(--font-amaranth);
+    font-weight: 600;
+
+    color: var(--text-color-green);
+
+}
+
+.pagina-login label input {
+    padding: 2%;
+
+    width: 96%;
+    height: auto;
+
+    font-size: var(--font-size-select-menu);
+    font-family: var(--font-amaranth);
+    font-weight: 400;
+
+    color: var(--text-color-green);
+
+    border: none;
+    border-bottom: 2px solid transparent;
+
+    background-color: transparent;
+
+    outline: none;
+
+    transition: border-bottom, .3s ease-in-out;
+
+}
+
+.pagina-login label input:focus {
+    border-bottom: 2px solid var(--background-color-green);
+
+}
+
+.pagina-login .botoes-login {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pagina-login .botoes-login input {
+    background-color: var(--background-color-green-escuro);
+
+    color: var(--text-color-white);
+
+    font-weight: 700;
+    font-size: var(--font-size-select-menu);
+
+    border-radius: 50px;
+    border: 2px solid var(--background-color-green-escuro);
+
+    padding: 0.5%;
+
+    width: 24%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    transition: background-color, border, color, .3s ease-in-out;
+
+}
+
+.pagina-login .botoes-login input:hover {
+    background-color: transparent;
+
+    border: 2px solid var(--background-color-green-escuro);
+
+    color: var(--text-color-green);
+
+    cursor:pointer;
+}
+
+.pagina-login .hr {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pagina-login .hr hr {
+    width: 40%;
+    height: 0px;
+
+    border-top: 0px solid var(--text-color-gray);
+    border-left: 0px solid var(--text-color-gray);
+    border-right: 0px solid var(--text-color-gray);
+    border-bottom: 2px solid var(--text-color-gray);
+
+}
+
+.pagina-login .botoes-cadastro {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: var(--font-size-select-menu);
+    font-family: var(--font-amaranth);
+    font-weight: 400;
+
+    color: var(--text-color-gray);
+
+}
+
+.pagina-login .botoes-cadastro a {
+    font-size: var(--font-size-select-menu);
+    font-family: var(--font-amaranth);
+    font-weight: 400;
+
+    color: var(--text-color-green);
+
+    text-decoration: none;
+
+    margin-left: 1%;
+
+    transition: color, .3s ease-in-out;
+
+}
+
+.pagina-login .botoes-cadastro a:hover {
+    color: var(--text-color-gray);
+
+}
+
+/* CADASTRO */
+.pagina-cadastro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.pagina-cadastro .container{
+    width: auto;
+    height: auto;
+}
+
+.pagina-cadastro .container form{
+    padding: 10%;
+
+    width: 400px;
+    height: 350px;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow: 0px 3px 5px -5px var(--box-shadow);
+
+    background-color: var(--background-color-white);
+
+    border-radius: 5px;
+}
+
+.pagina-cadastro label {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: var(--font-size-select-menu);
+    font-family: var(--font-amaranth);
+    font-weight: 600;
+
+    color: var(--text-color-green);
+
+}
+
+.pagina-cadastro label input {
+    padding: 2%;
+
+    width: 96%;
+    height: auto;
+
+    font-size: var(--font-size-select-menu);
+    font-family: var(--font-amaranth);
+    font-weight: 400;
+
+    color: var(--text-color-green);
+
+    border: none;
+    border-bottom: 2px solid transparent;
+
+    background-color: transparent;
+
+    outline: none;
+
+    transition: border-bottom, .3s ease-in-out;
+
+}
+
+.pagina-cadastro label input:focus {
+    border-bottom: 2px solid var(--background-color-green);
+
+}
+
+.pagina-cadastro .botoes-cadastro {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pagina-cadastro .botoes-cadastro input{
+    background-color: var(--background-color-green-escuro);
+
+    color: var(--text-color-white);
+
+    font-weight: 700;
+    font-size: var(--font-size-select-menu);
+
+    border-radius: 50px;
+    border: 2px solid var(--background-color-green-escuro);
+
+    padding: 0.5%;
+
+    width: 30%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    transition: background-color, border, color, .3s ease-in-out;
+
+}
+
+.pagina-cadastro .botoes-cadastro input:hover {
+    background-color: transparent;
+
+    border: 2px solid var(--background-color-green-escuro);
+
+    color: var(--text-color-green);
+
+    cursor:pointer;
+}
+
+.pagina-cadastro .hr {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pagina-cadastro .hr hr {
+    width: 45%;
+    height: 0px;
+
+    border-top: 0px solid var(--text-color-gray);
+    border-left: 0px solid var(--text-color-gray);
+    border-right: 0px solid var(--text-color-gray);
+    border-bottom: 2px solid var(--text-color-gray);
+
+}
+
+.pagina-cadastro .botoes-login {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: var(--font-size-select-menu);
+    font-family: var(--font-amaranth);
+    font-weight: 400;
+
+    color: var(--text-color-gray);
+
+}
+
+.pagina-cadastro .botoes-login a {
+    font-size: var(--font-size-select-menu);
+    font-family: var(--font-amaranth);
+    font-weight: 400;
+
+    color: var(--text-color-green);
+
+    text-decoration: none;
+
+    margin-left: 1%;
+
+    transition: color, .3s ease-in-out;
+
+}
+
+.pagina-cadastro .botoes-login a:hover {
+    color: var(--text-color-gray);
+
+}
+
+/*Hospede*/
+.pagina-hospede {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.pagina-hospede .container {
+
+    width: 100%;
+    height: 100%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.pagina-hospede .container form {
+    padding: 5%;
+
+    width: 70%;
+    height: 70%;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow: 0px 3px 5px -5px var(--box-shadow);
+
+    background-color: var(--background-color-white);
+
+    border-radius: 5px;
+}
+
+.pagina-hospede label {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: var(--font-size-select-menu);
+    font-family: var(--font-amaranth);
+    font-weight: 600;
+
+    color: var(--text-color-green);
+
+}
+
+.pagina-hospede label input {
+    padding: 2%;
+
+    width: 96%;
+    height: auto;
+
+    font-size: var(--font-size-select-menu);
+    font-family: var(--font-amaranth);
+    font-weight: 400;
+
+    color: var(--text-color-green);
+
+    border: none;
+    border-bottom: 2px solid transparent;
+
+    background-color: transparent;
+
+    outline: none;
+
+    transition: border-bottom, .3s ease-in-out;
+
+}
+
+.pagina-hospede label #nascimento {
+    color: var(--text-color-gray);
+}
+
+.pagina-hospede .cpf-nascimento {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+.pagina-hospede .cpf-nascimento label {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: var(--font-size-select-menu);
+    font-family: var(--font-amaranth);
+    font-weight: 600;
+
+    color: var(--text-color-green);
+
+}
+
+.pagina-hospede .cpf-nascimento label input {
+    padding: 3.5%;
+
+    width: 93%;
+    height: auto;
+
+    font-size: var(--font-size-select-menu);
+    font-family: var(--font-amaranth);
+    font-weight: 400;
+
+    color: var(--text-color-green);
+
+    border: none;
+    border-bottom: 2px solid transparent;
+
+    background-color: transparent;
+
+    outline: none;
+
+    transition: border-bottom, .3s ease-in-out;
+
+}
+
+
+.pagina-hospede label input:focus {
+    border-bottom: 2px solid var(--background-color-green);
+
+}
+
+.pagina-hospede .botoes-login {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pagina-hospede .botoes-login input {
+    background-color: var(--background-color-green-escuro);
+
+    color: var(--text-color-white);
+
+    font-weight: 700;
+    font-size: var(--font-size-select-menu);
+
+    border-radius: 50px;
+    border: 2px solid var(--background-color-green-escuro);
+
+    padding: 0.5%;
+
+    width: 24%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    transition: background-color, border, color, .3s ease-in-out;
+
+}
+
+.pagina-hospede .botoes-login input:hover {
+    background-color: transparent;
+
+    border: 2px solid var(--background-color-green-escuro);
+
+    color: var(--text-color-green);
+
+    cursor:pointer;
+}
+
+.pagina-hospede .hr {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pagina-hospede .hr hr {
+    width: 40%;
+    height: 0px;
+
+    border-top: 0px solid var(--text-color-gray);
+    border-left: 0px solid var(--text-color-gray);
+    border-right: 0px solid var(--text-color-gray);
+    border-bottom: 2px solid var(--text-color-gray);
+
+}
+
+.pagina-hospede .botoes-cadastro {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: var(--font-size-select-menu);
+    font-family: var(--font-amaranth);
+    font-weight: 400;
+
+    color: var(--text-color-gray);
+
+}
+
+.pagina-hospede .botoes-cadastro a {
+    font-size: var(--font-size-select-menu);
+    font-family: var(--font-amaranth);
+    font-weight: 400;
+
+    color: var(--text-color-green);
+
+    text-decoration: none;
+
+    margin-left: 1%;
+
+    transition: color, .3s ease-in-out;
+
+}
+
+.pagina-hospede .botoes-cadastro a:hover {
+    color: var(--text-color-gray);
+
+}
+
+/* RESERVA */
+section .reserva {
+    width: 68%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+section .reserva h1 {
+    font-size: var(--font-size-h1);
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    font-family: var(--font-amaranth);
+
+    color: var(--text-color-green);
+
+    margin-bottom: 2%;
+
+    width: 100%;
+    height: auto;
+
+}
+
+section .reserva .container {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+section .reserva .container .sidebar {
+    padding: 2%;
+
+    width: 16%;
+    height: auto;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+
+    box-shadow: 0px 3px 5px -5px var(--box-shadow);
+
+    background-color: var(--background-color-white);
+
+    border-radius: 5px;
+
+}
+
+section .reserva .container .sidebar h2 {
+    font-size: var(--font-size-h2);
+    font-weight: 400;
+
+    color: var(--text-color-green);
+
+}
+
+section .reserva .container .sidebar select {
+    padding: 4.5%;
+
+    width: 100%;
+    height: auto;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: var(--background-color-gray);
+
+    border: none;
+    border-radius: 3px;
+
+    outline: none;
+
+    color: var(--text-color-gray);
+
+}
+
+section .reserva .container .quartos {
+    /*padding: 2%;*/
+
+    width: 77%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    flex-wrap: wrap;
+
+    border-radius: 5px;
+
+}
+
+section .reserva .container .quartos .container-img {
+    margin: 0% 2% 2% 0%;
+
+    width: 31.33%;
+    height: 40vh;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow: 0px 3px 5px -5px var(--box-shadow);
+
+    background-color: var(--background-color-white);
+
+    border-radius: 5px;
+
+}
+
+section .reserva .container .quartos .container-img .img {
+    width: 100%;
+    height: auto;
+
+}
+
+section .reserva .container .quartos .container-img .img img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 5px 5px 0px 0px;
+    
+}
+
+section .reserva .container .quartos .container-img .dados {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+section .reserva .container .quartos .container-img .dados strong {
+    font-size: var(--font-size-select-menu);
+    font-weight: 700;
+
+}
+
+section .reserva .container .quartos .container-img .dados p {
+    font-size: var(--font-size-select);
+    font-weight: 700;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    line-height: 1;
+
+    color: var(--text-color-green);
+
+}
+
+section .reserva .container .quartos .container-img a {
+    font-size: var(--font-size-select-menu);
+    font-weight: 300;
+
+    color: var(--text-color-white);
+
+    background-color: var(--background-color-green);
+
+    border-radius: 5px;
+
+    padding: 2% 0%;
+    margin-bottom: 4%;
+
+    width: 56%;
+    height: auto;
+
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    box-shadow: 0px 3px 10px -5px var(--box-shadow);
+
+}
+
+/* QUARTO */
+section .quarto {
+    width: 68%;
+    height: auto;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+section .quarto .conteudo {
+    padding: 2% 2% 2% 0%;
+
+    width: 46%;
+    height: auto;
+
+}
+
+section .quarto .conteudo h1 {
+    font-size: var(--font-size-h1);
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    font-family: var(--font-amaranth);
+
+    color: var(--text-color-green);
+
+}
+
+section .quarto .img {
+    width: 90%;
+    height: 50vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+section .quarto .img img {
+    width: 100%;
+    height: auto;
+
+}
+
+/* SOBRE */
+section .sobre {
+    width: 68%;
+    height: auto;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+section .sobre .conteudo {
+    width: 50%;
+    height: auto;
+
+}
+
+section .sobre .conteudo h1 {
+    font-size: var(--font-size-h1);
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    font-family: var(--font-amaranth);
+
+    color: var(--text-color-green);
+
+}
+
+section .sobre .img {
+    width: 50%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+section .sobre .img img {
+    width: 100%;
+    height: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*A partir daqui pra baixo é coisa q deve ser removida apos o funcionamento 
+*/
+
+/*a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+ Provide sufficient contrast against white background 
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+ Sticky footer styles
+-------------------------------------------------- 
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+ Sticky footer styles
+-------------------------------------------------- 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+     Margin bottom by footer height 
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;  Vertically center the text there 
+}*/

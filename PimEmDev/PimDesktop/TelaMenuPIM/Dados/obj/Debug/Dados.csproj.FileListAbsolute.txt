@@ -1,0 +1,6 @@
+C:\Users\Erick\Desktop\Video01Mike\PIM-20211022T124426Z-001\PIM\TelaMenuPIM\Dados\bin\Debug\Dados.dll
+C:\Users\Erick\Desktop\Video01Mike\PIM-20211022T124426Z-001\PIM\TelaMenuPIM\Dados\bin\Debug\Dados.pdb
+C:\Users\Erick\Desktop\Video01Mike\PIM-20211022T124426Z-001\PIM\TelaMenuPIM\Dados\obj\Debug\Dados.csproj.AssemblyReference.cache
+C:\Users\Erick\Desktop\Video01Mike\PIM-20211022T124426Z-001\PIM\TelaMenuPIM\Dados\obj\Debug\Dados.csproj.CoreCompileInputs.cache
+C:\Users\Erick\Desktop\Video01Mike\PIM-20211022T124426Z-001\PIM\TelaMenuPIM\Dados\obj\Debug\Dados.dll
+C:\Users\Erick\Desktop\Video01Mike\PIM-20211022T124426Z-001\PIM\TelaMenuPIM\Dados\obj\Debug\Dados.pdb

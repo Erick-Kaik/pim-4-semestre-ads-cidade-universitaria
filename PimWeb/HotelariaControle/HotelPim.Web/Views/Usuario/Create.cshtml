@@ -1,0 +1,52 @@
+﻿@model HotelariaControle.Data.Models.Usuarios
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+
+<div class="pagina-cadastro">
+    <div class="container">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly"></div>
+            <label asp-for="Usuario" for="usuario">
+                <input asp-for="Usuario" type="text" name="usuario" id="usuario" placeholder="Usuario" />
+                <span asp-validation-for="Usuario" class="text-danger"></span>
+            </label>
+
+            <label asp-for="Senha" for="senha">
+                <input asp-for="Senha" type="password" name="senha" id="senha" placeholder="Senha" />
+                <span asp-validation-for="Senha" class="text-danger"></span>
+            </label>
+
+            <label for="confirmarsenha">
+                <input type="password" name="confirmarsenha" id="confirmarsenha" placeholder="Confirmar Senha">
+            </label>
+            <div class="botoes-cadastro">
+                <input type="submit" value="Cadastrar" />
+            </div>
+
+            <div class="hr">
+                <hr />
+            </div>
+
+            <div class="botoes-login">
+                Ja tem um cadastro? <a asp-area="" asp-controller="Hospede" asp-action="Hospede">Login</a>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+</body>
+</html>

@@ -1,0 +1,63 @@
+﻿@model HotelariaControle.Data.Models.Quartos
+@{
+    ViewData["Title"] = "Reserva";
+}
+
+<!-- SECTION -->
+<section>
+    <div class="reserva">
+        <h1>Nossos Quartos</h1>
+        <div class="container">
+            <div class="sidebar">
+                <h2>Quartos</h2>
+                <select asp-for="TipoQuarto" name="listaTipo"
+                    asp-items="@(new SelectList(ViewBag.ListaTipoDeQuartos, "Value", "Text"))">
+                </select>
+            </div>
+            <div class="quartos">
+                <!-- CRIACAO DE CARDS DOS QUARTOS -->
+                <div class="container-img">
+                    <div class="img">
+                        <img src="~/img/qSolteiro.jpg" alt="" />
+                    </div>
+                    <div class="dados">
+                        <strong>Quarto de Solteiros</strong>
+                        <p>O Quarto de Solteiros possui apenas 1 cama de solteiro, tendo 26m².</p>
+                    </div>
+                    <a asp-area="" asp-controller="Home" asp-action="QuartoSolteiro">Ver quarto</a>
+                </div>
+                <div class="container-img">
+                    <div class="img">
+                        <img src="~/img/qDuplo.jpg" alt="" />
+                    </div>
+                    <div class="dados">
+                        <strong>Quarto Duplo Solteiro</strong>
+                        <p>O Quarto Duplo Solteiros possui 2 camas de solteiro, tendo 30m².</p>
+                    </div>
+                    <a asp-area="" asp-controller="Home" asp-action="QuartoDuploSolteiro">Ver quarto</a>
+                </div>
+                <div class="container-img">
+                    <div class="img">
+                        <img src="~/img/qCasal.jpg" alt="" />
+                    </div>
+                    <div class="dados">
+                        <strong>Quarto para Casais</strong>
+                        <p>O Quarto de Casal possui 1 cama de casal, tendo quarto de 30 a 38 m².</p>
+                    </div>
+                    <a asp-area="" asp-controller="Home" asp-action="QuartoCasal">Ver quarto</a>
+                </div>
+                <div class="container-img">
+                    <div class="img">
+                        <img src="~/img/qDormi.jpg" alt="" />
+                    </div>
+                    <div class="dados">
+                        <strong>Dormitórios</strong>
+                        <p>O Dormitório possui duas beliches podendo acomodar 4 pessoas, sendo seus amigos ou familiares, tendo quartos de 38 a 46 m².</p>
+                    </div>
+                    <a asp-area="" asp-controller="Home" asp-action="Dormitorio">Ver quarto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

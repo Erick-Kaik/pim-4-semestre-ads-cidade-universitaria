@@ -1,0 +1,44 @@
+﻿@model HotelariaControle.Data.Models.Usuarios
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+    <!-- LOGIN -->
+    <div class="pagina-login">
+        <div class="container">
+            <form asp-action="Login">
+                <div asp-validation-summary="ModelOnly"></div>
+                <label for="usuario">
+                    <input type="text" name="username" id="username" placeholder="Username">
+                </label>
+
+                <label for="senha">
+                    <input type="password" name="senha" id="senha" placeholder="Senha">
+                </label>
+
+                <div class="botoes-login">
+                    <input type ="submit" value="Logar"/>
+                </div>
+
+                <div class="hr">
+                    <hr />
+                </div>
+
+                <div class="botoes-cadastro">
+                    Ainda nao tem uma conta? <a asp-area="" asp-controller="Hospede" asp-action="Hospede">Cadastre-se</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
